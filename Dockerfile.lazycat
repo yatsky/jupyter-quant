@@ -1,0 +1,10 @@
+# LazyCat LPK wrapper — adds zh-CN UI translation on top of upstream jupyter-quant
+FROM gnzsnz/jupyter-quant:2605.1
+
+# Switch to root to install the language pack system-wide  
+USER root
+
+RUN pip install --no-cache-dir jupyterlab-language-pack-zh-CN
+
+# Switch back to the upstream non-root user
+USER 1000:1000
