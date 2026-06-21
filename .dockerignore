@@ -15,3 +15,7 @@ pass/
 uv.lock
 .tox/
 .mypy_cache/
+# LazyCat LPK additions
+*.pem
+*.key
+secrets/
